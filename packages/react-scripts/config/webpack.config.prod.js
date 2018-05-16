@@ -235,6 +235,7 @@ module.exports = {
                               'Firefox ESR',
                               'not ie < 9', // React doesn't support IE8 anyway
                             ],
+                            grid: true,
                             flexbox: 'no-2009',
                           }),
                         ],
@@ -294,6 +295,7 @@ module.exports = {
                               'Firefox ESR',
                               'not ie < 9', // React doesn't support IE8 anyway
                             ],
+                            grid: true,
                             flexbox: 'no-2009',
                           }),
                         ],

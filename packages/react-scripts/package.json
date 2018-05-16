@@ -1,6 +1,6 @@
 {
   "name": "@nutgaard/react-scripts",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Configuration and scripts for Create React App.",
   "repository": "nutgaard/create-react-app",
   "license": "BSD-3-Clause",
@@ -21,7 +21,7 @@
     "react-scripts": "./bin/react-scripts.js"
   },
   "dependencies": {
-    "autoprefixer": "7.1.6",
+    "autoprefixer": "8.5.0",
     "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react-app": "^3.1.1",
