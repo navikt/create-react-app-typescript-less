@@ -36,8 +36,6 @@ const COMMON_EDITORS_OSX = {
   '/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2':
     '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl',
   '/Applications/Visual Studio Code.app/Contents/MacOS/Electron': 'code',
-  '/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron':
-    'code-insiders',
   '/Applications/AppCode.app/Contents/MacOS/appcode':
     '/Applications/AppCode.app/Contents/MacOS/appcode',
   '/Applications/CLion.app/Contents/MacOS/clion':

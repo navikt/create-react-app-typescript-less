@@ -33,8 +33,8 @@ const {
   choosePort,
   createCompiler,
   prepareProxy,
-  prepareUrls,
 } = require('react-dev-utils/WebpackDevServerUtils');
+const { prepareUrls } = require('../dev-utils-copy/WebpackServerDevUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
 const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');
@@ -80,6 +80,7 @@ choosePort(HOST, DEFAULT_PORT)
     const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
     const appName = require(paths.appPackageJson).name;
     const urls = prepareUrls(protocol, HOST, port, servedPathPathname);
+
     // Create a webpack compiler that is configured with custom messages.
     const compiler = createCompiler(webpack, config, appName, urls, useYarn);
     // Load proxy config

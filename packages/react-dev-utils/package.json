@@ -17,7 +17,6 @@
     "crossSpawn.js",
     "eslintFormatter.js",
     "errorOverlayMiddleware.js",
-    "serveAppMiddleware.js",
     "FileSizeReporter.js",
     "printBuildError.js",
     "formatWebpackMessages.js",

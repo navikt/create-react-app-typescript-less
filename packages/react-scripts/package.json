@@ -1,9 +1,10 @@
 {
   "name": "@nutgaard/react-scripts",
-  "version": "0.0.7",
+  "version": "0.0.8-beta.2",
   "description": "Configuration and scripts for Create React App.",
   "repository": "nutgaard/create-react-app",
   "license": "BSD-3-Clause",
+  "homepage": "http://github.com/test",
   "engines": {
     "node": ">=6"
   },
@@ -15,7 +16,8 @@
     "config",
     "scripts",
     "template",
-    "utils"
+    "utils",
+    "dev-utils-copy"
   ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
@@ -63,6 +65,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "@nutgaard/react-scripts": "file:./../create-react-app-typescript-less/packages/react-scripts/",
     "@types/prop-types": "^15.5.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
