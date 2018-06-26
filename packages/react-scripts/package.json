@@ -1,6 +1,6 @@
 {
   "name": "@nutgaard/react-scripts",
-  "version": "0.0.8-beta.3",
+  "version": "0.0.8-beta.4",
   "description": "Configuration and scripts for Create React App.",
   "repository": "nutgaard/create-react-app",
   "license": "BSD-3-Clause",
