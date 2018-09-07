@@ -31,6 +31,9 @@ if [ -n "$(git status --porcelain)" ]; then
   exit 1;
 fi
 
-npm version minor
+# Compile
+cd packages/react-error-overlay/
+npm run build:prod
+cd ../..
 # Go!
-npm publish --independent "$@"
+./node_modules/.bin/lerna publish --independent "$@"
