@@ -1,16 +1,22 @@
 {
-  "name": "react-scripts-ts",
+  "name": "@navikt/create-react-app-typescript-less",
   "version": "2.17.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "wmonk/create-react-app",
+  "repository": "github:navikt/create-react-app-typescript-less",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/wmonk/create-react-app/issues"
+    "url": "https://github.com/navikt/create-react-app-typescript-less/issues"
   },
-  "files": ["bin", "config", "scripts", "template", "utils"],
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template",
+    "utils"
+  ],
   "bin": {
     "react-scripts-ts": "./bin/react-scripts-ts.js"
   },
@@ -30,6 +36,8 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "less": "^3.0.4",
+    "less-loader": "4.1.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
@@ -54,6 +62,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.5.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "typescript": "3.0.1"
