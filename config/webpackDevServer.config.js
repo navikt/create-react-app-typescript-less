@@ -12,9 +12,11 @@ const errorOverlayMiddleware = require('../custom-react-dev-utils/errorOverlayMi
 const noopServiceWorkerMiddleware = require('../custom-react-dev-utils/noopServiceWorkerMiddleware');
 const serveAppMiddleware = require('../custom-react-dev-utils/serveAppMiddleware');
 const ignoredFiles = require('react-dev-utils/ignoredFiles');
-const config = require('./webpack.config.dev');
 const url = require('url');
+const config = require('./webpack.config.dev');
 const paths = require('./paths');
+const express = require('express');
+
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
@@ -90,6 +92,7 @@ module.exports = function(proxy, allowedHost) {
       // Paths with dots should still use the history fallback.
       // See https://github.com/facebookincubator/create-react-app/issues/387.
       disableDotRule: true,
+      index: servedPathPathname,
     },
     public: allowedHost,
     proxy,
@@ -103,6 +106,10 @@ module.exports = function(proxy, allowedHost) {
       // https://github.com/facebookincubator/create-react-app/issues/2272#issuecomment-302832432
       app.use(noopServiceWorkerMiddleware());
       app.use(serveAppMiddleware(servedPathPathname));
+      app.use(
+          `${config.output.publicPath.slice(0, -1)}/static`,
+          express.static(paths.appPublic)
+      );
     },
   };
 };
