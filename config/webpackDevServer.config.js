@@ -13,6 +13,7 @@ const noopServiceWorkerMiddleware = require('../custom-react-dev-utils/noopServi
 const serveAppMiddleware = require('../custom-react-dev-utils/serveAppMiddleware');
 const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const config = require('./webpack.config.dev');
+const url = require('url');
 const paths = require('./paths');
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
