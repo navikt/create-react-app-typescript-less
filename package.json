@@ -21,6 +21,9 @@
   "bin": {
     "react-scripts-ts": "./bin/react-scripts-ts.js"
   },
+  "publishConfig": {
+    "access" : "public"
+  },
   "dependencies": {
     "autoprefixer": "8.5.0",
     "babel-jest": "20.0.3",
