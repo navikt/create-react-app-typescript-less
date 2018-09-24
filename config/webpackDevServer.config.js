@@ -10,12 +10,15 @@
 
 const errorOverlayMiddleware = require('../custom-react-dev-utils/errorOverlayMiddleware');
 const noopServiceWorkerMiddleware = require('../custom-react-dev-utils/noopServiceWorkerMiddleware');
+const serveAppMiddleware = require('../dev-utils-copy/serveAppMiddleware');
 const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const config = require('./webpack.config.dev');
 const paths = require('./paths');
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
+
+const servedPathPathname = url.parse(paths.servedPath).pathname || '';
 
 module.exports = function(proxy, allowedHost) {
   return {
@@ -98,6 +101,7 @@ module.exports = function(proxy, allowedHost) {
       // it used the same host and port.
       // https://github.com/facebookincubator/create-react-app/issues/2272#issuecomment-302832432
       app.use(noopServiceWorkerMiddleware());
+      app.use(serveAppMiddleware(servedPathPathname));
     },
   };
 };
