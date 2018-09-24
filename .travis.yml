@@ -16,3 +16,6 @@ deploy:
   on:
     tags: true
   skip_cleanup: true
+branches:
+  only:
+  - less-support-v2
