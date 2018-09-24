@@ -1,6 +1,6 @@
 {
   "name": "@navikt/create-react-app-typescript-less",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "description": "Configuration and scripts for Create React App.",
   "repository": "github:navikt/create-react-app-typescript-less",
   "license": "BSD-3-Clause",
@@ -22,7 +22,7 @@
     "react-scripts-ts": "./bin/react-scripts-ts.js"
   },
   "publishConfig": {
-    "access" : "public"
+    "access": "public"
   },
   "dependencies": {
     "autoprefixer": "8.5.0",
