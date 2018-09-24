@@ -32,8 +32,8 @@ const {
   choosePort,
   createCompiler,
   prepareProxy,
-  prepareUrls,
 } = require('react-dev-utils/WebpackDevServerUtils');
+const { prepareUrls } = require('../custom-react-dev-utils/WebpackServerDevUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
 const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');

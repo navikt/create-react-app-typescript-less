@@ -15,7 +15,8 @@
     "config",
     "scripts",
     "template",
-    "utils"
+    "utils",
+    "custom-react-dev-utils"
   ],
   "bin": {
     "react-scripts-ts": "./bin/react-scripts-ts.js"
