@@ -25,6 +25,7 @@
     "access": "public"
   },
   "dependencies": {
+    "ajv": "^6.5.4",
     "autoprefixer": "8.5.0",
     "babel-core": "6.26.3",
     "babel-jest": "23.4.2",
@@ -50,9 +51,9 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "source-map-loader": "^0.2.1",
     "react-dev-utils": "^5.0.2",
     "resolve": "1.6.0",
+    "source-map-loader": "^0.2.1",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "ts-jest": "23.1.4",
